@@ -8,7 +8,7 @@ def join_ingredients(src)
   # As such, there should be a new String for each inner array, or pair
   counter = 0 
   pizza_arr = []
-  while src[counter] do
+  while counter < src.length do
     pizza_arr.push("I love #{src[counter][0]} and #{src[counter][1]} on my pizza")
     counter += 1 
   end
@@ -22,7 +22,7 @@ def find_greater_pair(src)
   
 counter = 0 
 larger_number = []
-  while src[counter] do
+  while counter < src.length do
     if src[counter][0] > src[counter][1]
       larger_number.push(src[counter][0])
     else
@@ -30,7 +30,7 @@ larger_number = []
     end
     counter += 1 
   end
-  return larger_number]
+  return larger_number
   
 end
 
@@ -44,7 +44,7 @@ def total_even_pairs(src)
   # this!
 counter = 0 
 even_sums = []
-  while src[counter] do
+  while counter < src.length do
     if src[counter][0] % 2 == 0 && src[counter][1] % 2 == 0
       even_sums.push(src[counter][0])
     end
