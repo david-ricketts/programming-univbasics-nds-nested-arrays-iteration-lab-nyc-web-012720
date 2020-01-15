@@ -50,6 +50,6 @@ total = 0
     end
     counter += 1 
   end
-  return even_sums
+  return total
   
 end
